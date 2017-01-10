@@ -1,0 +1,7 @@
+[program:app_live_console]
+command=/usr/bin/node /home/autodeploy/www/current/server.js
+autorestart=true
+user=autodeploy
+redirect_stderr=false
+stdout_logfile=/var/log/supervisor/app_live_console.log
+stdout_logfile_maxbytes=10MB
